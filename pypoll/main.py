@@ -29,7 +29,7 @@ for candi in candidate_list:
             if row[2] == str(candi):
                 candidate_number_votes+= 1
         candidate_votes_List.append(candidate_number_votes)
-        Percent = ((candidate_number_votes / Total_vote_counts) * 100)
+        Percent = round(((candidate_number_votes / Total_vote_counts) * 100),2)
         Percentage_list.append(Percent)
         candidate_number_votes = 0
 #To find the winner of the election
